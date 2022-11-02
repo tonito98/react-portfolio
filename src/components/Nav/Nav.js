@@ -1,32 +1,29 @@
 import React from 'react';
-import About from '../About';
-import {nav, navbar, NavLink } from 'react-bootstrap';
+
 
 
 function NavigationBar() {
 
 
     return (
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar  bg-primary">
         <div class="container-fluid">
             <div class='col-4'>
-                <span  >Antonio</span>
+                <h5>Antonio</h5>
             </div>
             <div class='col-8'>
-            <ul class='nav justify-content-end'>
+            <ul class='nav justify-content-center'>
                 <li class='nav-item'>
-                    <a href="#about">
-                        About me
-                    </a>
+                    <a class="nav-link" href="#about">About me</a>
                 </li>
                 <li class="nav-item">
-                    <span>Portfolio</span>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <span>Resume</span>
+                    <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <span>Contact</span>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
            </div>
