@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 function NavigationBar() {
 
 
@@ -14,16 +13,16 @@ function NavigationBar() {
             <div class='col-8'>
             <ul class='nav justify-content-center'>
                 <li class='nav-item'>
-                    <a class="nav-link" href="#about">About me</a>
+                    <a class="nav-link" href="/about">About me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="/portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="/resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
            </div>
