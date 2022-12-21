@@ -49,3 +49,17 @@ nav.navbar {
   a:hover {
     color: #38412f;
   }
+
+  //Portfolio section
+ .card-col {
+  height: 10rem;
+ }
+
+ .card-img{
+  width: 100% !important;;
+  height:158px;
+  object-fit:cover;
+ }
+ body{
+  background-color: #bec5ad;
+ }
