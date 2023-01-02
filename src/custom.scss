@@ -63,3 +63,27 @@ nav.navbar {
  body{
   background-color: #bec5ad;
  }
+
+//  on hover zoom in on image
+.card:hover {
+  opacity: 0.7;
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -ms-transform:scale(1);
+  -o-transform:scale(1);
+  transform:scale(1.05);
+
+  
+}
+
+#webpage.card-img-overlay{
+  margin-top: 3rem;
+}
+
+.btn-circle.btn-md {
+ width: 33.2px;
+ height: 33.2px;
+ padding: 0px 0px;
+ border-radius: 25px;
+
+ }
