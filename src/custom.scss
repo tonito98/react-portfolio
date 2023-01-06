@@ -87,3 +87,11 @@ nav.navbar {
  border-radius: 25px;
 
  }
+
+.card-img-overlay{
+  display: none;
+}
+
+.card:hover .card-img-overlay{
+  display: block;
+}
