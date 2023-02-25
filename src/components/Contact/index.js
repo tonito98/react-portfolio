@@ -33,9 +33,12 @@ function ContactForm() {
     console.log('errorMessage', errorMessage);
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e, {resetForm}) {
     e.preventDefault();
+    
     console.log(formState);
+    resetForm({value: ''})
+    
   }
   return(
     <div style={{ display: 'block', 
@@ -44,18 +47,18 @@ function ContactForm() {
         {/* <h4>Contact Me</h4> */}
         <Form id="contact-form" onSubmit={handleSubmit}>
         <h4>Contact Me</h4>
-           <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" defaultValue={name} required onBlur={handleChange} name="name" />
+           <div class='form-input'>
+            {/* <label for="name">Name:</label> */}
+            <input placeholder="Name" type="text" defaultValue={name} required onBlur={handleChange} name="name" />
+           </div >
+           <div class='form-input'>
+            {/* <label htmlFor="email">Email Address:</label> */}
+            <input placeholder="Email" type="text" defaultValue={email} required onBlur={handleChange} name="email" />
            </div>
            <div>
-            <label htmlFor="email">Email Address:</label>
-            <input type="text" defaultValue={email} required onBlur={handleChange} name="email" />
+            {/* <Form.Label htmlFor="message">Message:</Form.Label> */}
+            <textarea placeholder="Your Message" name="message" defaultValue={message} required onBlur={handleChange} rows="5" />
            </div>
-           <Form.Group>
-            <Form.Label htmlFor="message">Message:</Form.Label>
-            <textarea name="message" defaultValue={message} required onBlur={handleChange} rows="5" />
-           </Form.Group>
            {errorMessage &&(
             <div>
               <p className="error-text">{errorMessage}</p>

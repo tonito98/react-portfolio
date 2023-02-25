@@ -138,6 +138,7 @@ nav.navbar {
 
 #contact-form Button{
   background-color:#5b6452;
+  border-color:#5b6452;
   width: 100%;
 }
 // #form-box textarea{
@@ -146,4 +147,15 @@ nav.navbar {
 
 #contact-form Button:hover {
   background-color: #38412f;
+  border-color: #38412f;
+}
+
+
+
+.form-input{
+  margin-bottom: 4vw;
+}
+
+h4{
+  margin-bottom: 4vw;
 }
