@@ -5,6 +5,7 @@ import ContactForm from './components/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Portfolio from './components/Portfolio/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element= {<Portfolio/>} />
+        <Route path="/resume" element= {<Resume/>}/>
         </Routes>
       </main>
       
